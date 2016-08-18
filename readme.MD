@@ -13,6 +13,10 @@ git clone git@github.com:eyasliu/mock-server.git
 npm i && npm start
 ```
 
+服务启动后会监听 3000 端口，请按需修改
+
+访问 `http://localhost:3000` 即可访问服务
+
 ## 使用方法
 
  `api` 目录是模拟数据定义的地方，文件以es6语法书写，形式大概为
