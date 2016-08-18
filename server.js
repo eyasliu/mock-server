@@ -2,9 +2,12 @@ import Mock from 'mockjs';
 import Server from 'ohana';
 import include from 'include-all';
 import path from 'path';
+import yargs from 'yargs';
+
+const args = yargs.argv._
 
 const files = include({
-	dirname: path.join(__dirname, 'api')
+	dirname: path.resolve(__dirname, args[0] || 'api')
 })
 
 const composePaths = files => {
