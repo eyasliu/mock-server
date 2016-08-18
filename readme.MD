@@ -15,7 +15,7 @@ npm i && npm start
 
 服务启动后会监听 3000 端口，请按需修改
 
-访问 `http://localhost:3000` 即可访问服务
+访问 `http://localhost:3000/post` 即可访问服务
 
 ## 使用方法
 
