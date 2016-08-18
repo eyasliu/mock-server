@@ -1,5 +1,5 @@
 export default {
-	'/user': () => ({
+	'/user/1': () => ({
 		"id": 1
 	})
 }
