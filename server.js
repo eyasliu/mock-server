@@ -5,7 +5,7 @@ import path from 'path';
 import yargs from 'yargs';
 
 const args = yargs.argv._
-
+console.log(path.resolve(__dirname, args[0] || 'api'))
 const files = include({
 	dirname: path.resolve(__dirname, args[0] || 'api')
 })
@@ -50,7 +50,7 @@ const server = new Server()
 routes.forEach(item => {
 	server[item.method](item.path, {
 		data: () => {
-			return Mock.mock(item.handler.apply(this, arguments))
+			return Mock.mock(item.handler.apply(this, arguments));
 		}
 	})
 })
